@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Application web responsive moderne créée avec HTML, CSS et JavaScript">
+  <title>MonApp — Application Responsive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">MonApp</a>
+      <nav class="nav" id="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="accueil" class="hero">
+    <div class="container">
+      <h1>Bienvenue sur <span>MonApp</span></h1>
+      <p>Une application web moderne, responsive et performante. Conçue pour s’adapter parfaitement à tous les écrans.</p>
+      <div class="hero-actions">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets" class="projects">
+    <div class="container">
+      <h2>Mes projets</h2>
+      <p class="section-subtitle">Quelques réalisations récentes</p>
+      <div class="grid">
+        <article class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Landing Page</h3>
+          <p>Page d’atterrissage moderne et optimisée pour la conversion, entièrement responsive.</p>
+          <a href="#" class="card-link">Voir le projet →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">📱</div>
+          <h3>Dashboard</h3>
+          <p>Interface d’administration claire avec graphiques et gestion de données en temps réel.</p>
+          <a href="#" class="card-link">Voir le projet →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">🛒</div>
+          <h3>E-commerce</h3>
+          <p>Boutique en ligne complète avec panier, paiement et gestion des stocks.</p>
+          <a href="#" class="card-link">Voir le projet →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="apropos" class="about">
+    <div class="container">
+      <h2>À propos</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Je suis un développeur web passionné par la création d’expériences numériques fluides et accessibles. Mon objectif est de construire des applications qui fonctionnent parfaitement sur tous les appareils.</p>
+          <p>Technologies utilisées : HTML5, CSS moderne (Flexbox & Grid), JavaScript vanilla, Git & GitHub.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Projets</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3 ans</span>
+            <span class="stat-label">Expérience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Responsive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="section-subtitle">Une question ? Un projet ? Écris-moi !</p>
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Ton nom" required>
+          <input type="email" name="email" placeholder="Ton email" required>
+        </div>
+        <input type="text" name="subject" placeholder="Sujet" required>
+        <textarea name="message" placeholder="Ton message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+      </form>
+      <div id="form-message" class="form-message" hidden></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 MonApp — Créé avec ❤️ et du code propre</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
